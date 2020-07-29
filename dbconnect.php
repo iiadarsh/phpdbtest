@@ -18,5 +18,12 @@ if ($connection->connect_errno) {
 } else {
     printf("Connected to the database");
 }
+
+if(mysqli_connect_errno()){
+	die("can't connect to database". mysqli_connect_error());
+}else {
+    printf("Connected to the database hurray");
+}
+
 mysqli_close($connection);
 ?>
