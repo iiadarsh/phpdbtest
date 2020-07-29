@@ -11,7 +11,7 @@ echo "dbuser : $dbuser";
 echo "dbpwd : $dbpwd";
 echo "dbname : $dbname";
 
-$connection = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
+$connection = new mysqli_connect($dbhost, $dbuser, $dbpwd, $dbname);
 if ($connection->connect_errno) {
     printf("Connect failed: %s\n", $mysqli->connect_error);
     exit();
