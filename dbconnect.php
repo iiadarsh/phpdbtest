@@ -13,7 +13,7 @@ echo "dbname : $dbname";
 
 $connection = mysqli_connect($dbhost.":".$dbport, $dbuser, $dbpwd);
 if (!$connection) {
-    printf("Couldn't connect to database);
+    printf("Couldn't connect to database");
     exit();
 } else {
     printf("Connected to the database.<br>");
